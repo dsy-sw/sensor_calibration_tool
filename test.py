@@ -1,7 +1,4 @@
-import config.config as config
+a = {'1':[0,0],'2':[[]]}
 
-con = config.name_match
-a = 'gnss'
-b = a.split(' ')
-if b in con:
-    print(b)
+if  a.values():
+    print(a)
