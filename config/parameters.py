@@ -1,3 +1,7 @@
+class LIDAR:
+    name = self.__name__
+    sensor_addr = 
+
 sensor_addr = {'velodyne_fc':('192.168.30.30',2368),
                 'lidar':('192.168.30.1',2368),
                 'velodyne_fl':('192.168.30.40',2368),
