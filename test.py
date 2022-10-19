@@ -1,4 +1,3 @@
-a = {'1':[0,0],'2':[[]]}
+import multiprocessing as mp
 
-if  a.values():
-    print(a)
+print(mp.cpu_count())
