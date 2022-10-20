@@ -1,8 +1,14 @@
 # pycache
+/__pycache__/
+__pycache__/
+/__pycache__
 __pycache__
 
+# pyc
+/*.pyc
+
 # log
-logs
+logs/
 
 # runner
 tempCodeRunnerFile.py

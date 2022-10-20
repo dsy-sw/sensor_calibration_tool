@@ -16,20 +16,22 @@ from config.constants import *
 
 
 @dataclass
-class DataBase:
+class Base():
     name: str
-    start_time: time()
+    start_time: time
+
+
+@dataclass()
+class SensorType(Base):
+    dev_type: str
+    manufacturer: str
     status: int = STATE.DISCONNECTED
     last_update: float = 0
     update_rate: float = 0    # hz
 
-@dataclass
-class Sensor:
-    dev_type: str
-    manufacturer: str
-    ip: int
-    port: int
-
-class Lidar(DataBase, Sensor):
-    def __init__(self):
-        self.raw_data: bytes = None
+@dataclass()
+class ScoketType(Base):
+    ip: str
+    port:int
+    protocol:str
+    client_bind: tuple = (ip,port)
