@@ -21,7 +21,7 @@ class Base():
     start_time: time
 
 
-@dataclass()
+@dataclass
 class SensorType(Base):
     dev_type: str
     manufacturer: str
@@ -29,9 +29,14 @@ class SensorType(Base):
     last_update: float = 0
     update_rate: float = 0    # hz
 
-@dataclass()
+@dataclass
 class ScoketType(Base):
     ip: str
     port:int
     protocol:str
     client_bind: tuple = (ip,port)
+    
+@dataclass
+class Velodyne(SensorType):
+    raw_data:bytes = 0
+    velo:bool = 1
