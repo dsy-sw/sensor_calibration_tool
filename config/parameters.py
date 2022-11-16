@@ -1,3 +1,6 @@
+from pickle import DEFAULT_PROTOCOL
+
+
 class LiDAR:
     manufacturer = {}
     address = {}
@@ -12,3 +15,10 @@ class LiDAR:
                     }
 
 sensor_working = {}
+
+class Network:
+    lidar_addr:dict = {str:(str,int)}
+    gnss_addr:dict = {str:(str,int)}
+    DEFAULT_BUFFER: int= 1024
+    DEFAULT_PROTOCOL: str = 'udp'
+    
