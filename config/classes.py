@@ -1,7 +1,7 @@
 import platform
 if platform.system() == "Linux":
     #!/usr/bin/python3.10
-    pass
+    print("Version Linux")
 
 from dataclasses import dataclass
 from time import time
