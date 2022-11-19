@@ -1,4 +1,5 @@
 import platform
+
 if platform.system() == "Linux":
     #!/usr/bin/python3.10
     print("Version Linux")
@@ -25,7 +26,7 @@ class Base():
 class SensorType(Base):
     dev_type: str
     manufacturer: str
-    status: int = STATE.DISCONNECTED
+    status: int = STAT.DISCONNECTED
     last_update: float = 0
     update_rate: float = 0    # hz
 

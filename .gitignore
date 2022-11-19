@@ -9,6 +9,9 @@ __pycache__
 
 # log
 logs/
+/logs
 
 # runner
 tempCodeRunnerFile.py
+
+test.py
