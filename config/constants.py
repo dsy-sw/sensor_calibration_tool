@@ -19,4 +19,3 @@ class LATENCY:
     GOOD = 0.05
     OK = 0.15
     BAD = 0.2
-

@@ -1,5 +1,3 @@
-from pickle import DEFAULT_PROTOCOL
-
 
 class LiDAR:
     manufacturer = {}
