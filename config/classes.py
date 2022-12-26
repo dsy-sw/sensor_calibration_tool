@@ -15,9 +15,8 @@ print(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from config.constants import *
 
 
-
 @dataclass
-class Base():
+class Base:
     name: str
     start_time: time
 
@@ -28,16 +27,18 @@ class SensorType(Base):
     manufacturer: str
     status: int = STAT.DISCONNECTED
     last_update: float = 0
-    update_rate: float = 0    # hz
+    update_rate: float = 0  # hz
+
 
 @dataclass
 class ScoketType(Base):
     ip: str
-    port:int
-    protocol:str
-    client_bind: tuple = (ip,port)
-    
+    port: int
+    protocol: str
+    client_bind: tuple = (ip, port)
+
+
 @dataclass
 class Velodyne(SensorType):
-    raw_data:bytes = 0
-    velo:bool = 1
+    raw_data: bytes = 0
+    velo: bool = 1
