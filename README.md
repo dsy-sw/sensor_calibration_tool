@@ -18,14 +18,12 @@
 - 현장에서 GNSS의 안테나 위치, 설치된 LiDAR 위치를 조정하는게 너무너무 불편해서 만들기 시작했습니다.  
 <br>
 
-- Flow Chart(updating...)
-<!-- ![Flow Chart](/docs/flow_chart.png "Flow Chart") -->
-<img src="/docs/flow_chart.png" width="50%" height="50%" title="Flow Chart"></img>
+- Flow Chart and Class Diagram(updating...)
+<img src="/docs/flow_chart.png" width="50%" height="50%" title="Flow Chart"></img><img src="/docs/Software_Design.png" width="50%" height="50%" title="Class Diagram"></img>
 <br>
 
-- Class Diagram(Updating...)
+<!-- ![Flow Chart](/docs/flow_chart.png "Flow Chart") -->
 <!-- ![Class Diagram](/docs/Software_Design.png "Class Diagram") -->
-<img src="/docs/Software_Design.png" width="50%" height="50%" title="Class Diagram"></img>
 
 
 <!--1. 프로젝트의 목적 및 용도

@@ -23,6 +23,7 @@ class Base:
 
 @dataclass
 class SensorType(Base):
+    dev_type: str
     manufacturer: str
     status: int = STAT.DISCONNECTED
     last_update: float = 0  # unit: sec
@@ -36,6 +37,13 @@ class SocketType():
     ip: str
     port:int
     protocol:str
+    client_bind: tuple = (ip,port)
+    
+    
+@dataclass
+class Velodyne(SensorType):
+    raw_data: bytes = 0
+    velo: bool = 1
     client_bind: tuple = (ip,port)
     
     
