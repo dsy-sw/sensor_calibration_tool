@@ -1,11 +1,11 @@
-#Sensor Calibration Tool
+# Sensor Calibration Tool
 ---
 ## INDEX
 - [1. Description](#Description)
 
-- [2. How to install](#)
+- [2. How to install](#How_to_install)
 
-- [3. How to use](#)
+- [3. How to use](#How_to_use)
 
 ---
 
@@ -18,9 +18,16 @@
 - 현장에서 GNSS의 안테나 위치, 설치된 LiDAR 위치를 조정하는게 너무너무 불편해서 만들기 시작했습니다.  
 <br>
 
-- Flow Chart and Class Diagram(updating...)
-<img src="/docs/flow_chart.png" width="50%" height="50%" title="Flow Chart"></img><img src="/docs/Software_Design.png" width="50%" height="50%" title="Class Diagram"></img>
+- Flow Chart(updating...)
+<img src="/docs/flow_chart.png" width="50%" height="50%" title="Flow Chart"></img>
+
+- Class Diagram(updating...)
+<img src="/docs/Software_Design.png" width="50%" height="50%" title="Class Diagram"></img>
 <br>
+
+## How to install
+
+## How to use
 
 <!-- ![Flow Chart](/docs/flow_chart.png "Flow Chart") -->
 <!-- ![Class Diagram](/docs/Software_Design.png "Class Diagram") -->

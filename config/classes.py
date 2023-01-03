@@ -28,15 +28,15 @@ class SensorType(Base):
     status: int = STAT.DISCONNECTED
     last_update: float = 0  # unit: sec
     update_rate: float = 0    # hz
-    translation:tuple = (0, 0, 0)  # unit: meter
-    rotation:tuple = (0, 0, 0)  # unit: meter
+    translation: tuple = (0, 0, 0)  # unit: meter
+    rotation: tuple = (0, 0, 0)  # unit: meter
     
 
 @dataclass
 class SocketType():
     ip: str
-    port:int
-    protocol:str
+    port: int
+    protocol: str
     client_bind: tuple = (ip,port)
     
     
@@ -44,17 +44,17 @@ class SocketType():
 class Velodyne(SensorType):
     raw_data: bytes = 0
     velo: bool = 1
-    client_bind: tuple = (ip,port)
+    # client_bind: tuple = (ip,port)
     
     
-@dataclass
-class LidarType(SensorType, SocketType):
-    model_name: str
-    frame_id: int
-    horizeontal_range: tuple(int,int)
-    vertical_channel: tuple(int,int)
-    frame_rate: int
-    rpm: int
+# @dataclass
+# class LidarType(SensorType, SocketType):
+#     model_name: str
+#     frame_id: int
+#     horizeontal_range: tuple(int,int)
+#     vertical_channel: tuple(int,int)
+#     frame_rate: int
+#     rpm: int
     
 '''
 frame_id: "velodyne32"
