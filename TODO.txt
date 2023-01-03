@@ -1,0 +1,3 @@
+1. netowrk 구성
+2. parser 제작
+3. view
